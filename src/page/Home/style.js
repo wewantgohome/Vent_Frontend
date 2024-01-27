@@ -59,6 +59,9 @@ export const FilterItem = styled.div`
   align-items: center;
   background-color: #f6f6f6;
   border-radius: 20px;
+  cursor: pointer;
+  ${(props) =>
+    props.value ? "color:#5B22FF; background-color:#5B22FF1A;" : ""}
 `;
 
 export const EventCardList = styled.div`

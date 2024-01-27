@@ -15,7 +15,11 @@ const Header = () => {
         </S.LogoWrapper>
         <S.MenuList>
           {MenuData.map((i) => (
-            <S.MenuItem href={i.value} onPage={location.pathname === i.value}>
+            <S.MenuItem
+              key={i.value}
+              href={i.value}
+              onPage={location.pathname === i.value}
+            >
               {i.name}
             </S.MenuItem>
           ))}
