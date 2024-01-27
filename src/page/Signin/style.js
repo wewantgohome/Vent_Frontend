@@ -11,6 +11,7 @@ export const Container = styled.div`
 
 export const Input_Box = styled.div`
   margin-top: 10%;
+  width: 350px;
 `
 
 export const Input_Text = styled.div`
