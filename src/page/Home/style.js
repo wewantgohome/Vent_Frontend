@@ -64,4 +64,5 @@ export const FilterItem = styled.div`
 export const EventCardList = styled.div`
   width: 100%;
   display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
 `;

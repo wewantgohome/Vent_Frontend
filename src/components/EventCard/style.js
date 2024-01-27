@@ -7,7 +7,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin-bottom: 20px;
+
   h1 {
+    margin-top: 10px;
     color: #000;
     font-size: 18px;
     font-style: normal;
