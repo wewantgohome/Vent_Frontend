@@ -15,6 +15,7 @@ export const Layout = styled.div`
 `;
 
 export const LogoWrapper = styled.div`
+  cursor: pointer;
   img {
     height: 28px;
   }

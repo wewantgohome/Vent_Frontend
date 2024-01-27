@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
 
 @font-face {
   font-family: 'Pretendard';
-  font-weight: 200;
+  font-weight: 200;       
   font-display: swap;
   src: local('Pretendard ExtraLight'),
     url('/fonts/woff2/Pretendard-ExtraLight.woff2') format('woff2'),
@@ -81,6 +81,10 @@ const GlobalStyle = createGlobalStyle`
     url('/fonts/woff2/Pretendard-Thin.woff2') format('woff2'),
     url('/fonts/woff/Pretendard-Thin.woff') format('woff');
 }
+
+*{
+    font-family: Pretendard;
+  }
 `;
 
 export default GlobalStyle;

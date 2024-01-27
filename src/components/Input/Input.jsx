@@ -1,12 +1,18 @@
-import React from 'react';
-import * as S from './style';
+import React from "react";
+import * as S from "./style";
 
-const Input = ({ type, holder, onClickMethod, value }) => {
-	return (
-		<>
-			<S.Input_Box type={type} placeholder={holder} onClick={onClickMethod} value={value} />
-		</>
-	);
+const Input = ({ type, holder, onClickMethod, onChangeMethod, value }) => {
+  return (
+    <>
+      <S.Input_Box
+        type={type}
+        placeholder={holder}
+        onClick={onClickMethod}
+        onChange={onChangeMethod}
+        value={value}
+      />
+    </>
+  );
 };
 
 export default Input;

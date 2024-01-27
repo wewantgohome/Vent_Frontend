@@ -1,12 +1,12 @@
-import React from 'react';
-import * as S from './style'
+import React from "react";
+import * as S from "./style";
 
 const Button = ({ text, onClickMethod }) => {
-	return (
-		<>
-			<S.Button_Box onClick={onClickMethod}>{text}</S.Button_Box>
-		</>
-	);
+  return (
+    <>
+      <S.Button_Box onClick={onClickMethod}>{text}</S.Button_Box>
+    </>
+  );
 };
 
 export default Button;

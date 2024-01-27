@@ -30,7 +30,7 @@ const Home = () => {
         <Input type="text" placeholder="이름으로 검색" />
         <FilterList>
           {FilterData.map((i) => (
-            <FilterItem>{i.name}</FilterItem>
+            <FilterItem onClick={() => setFilter()}>{i.name}</FilterItem>
           ))}
         </FilterList>
         <EventCardList>

@@ -1,14 +1,16 @@
 import React from "react";
 import * as S from "./style";
 import { MenuData } from "../../asset/data/MenuData";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const Logout = () => {};
   return (
     <S.Wrapper>
       <S.Layout>
-        <S.LogoWrapper>
+        <S.LogoWrapper onClick={() => navigate("/")}>
           <img src="../../../Img/Logo.svg" />
         </S.LogoWrapper>
         <S.MenuList>

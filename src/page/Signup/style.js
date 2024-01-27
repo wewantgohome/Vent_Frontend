@@ -6,12 +6,12 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-`
+`;
 
 export const Input_Box = styled.div`
   margin-top: 10%;
-`
+  width: 100%;
+`;
 
 export const Input_Text = styled.div`
   margin-bottom: 3%;
@@ -20,24 +20,24 @@ export const Input_Text = styled.div`
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.16px;
-`
+`;
 
 export const Logo_Img = styled.img`
   width: 265px;
-`
+`;
 
 export const Button_Box = styled.div`
   margin-top: 10%;
-`
+`;
 
 export const Link_Box = styled.div`
   margin-top: 4%;
   width: max-content;
-`
+`;
 
 export const RegisterLink = styled.a`
   width: 56px;
-  color: var(--Primary, #5B22FF);
+  color: var(--Primary, #5b22ff);
   font-family: "Pretendard Variable";
   font-size: 16px;
   font-style: normal;
@@ -45,4 +45,4 @@ export const RegisterLink = styled.a`
   line-height: 24px;
   letter-spacing: -0.16px;
   text-decoration-line: underline;
-`
+`;
