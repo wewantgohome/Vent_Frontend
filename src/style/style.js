@@ -85,6 +85,14 @@ const GlobalStyle = createGlobalStyle`
 *{
     font-family: Pretendard;
   }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 `;
 
 export default GlobalStyle;
