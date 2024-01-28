@@ -111,6 +111,8 @@ export const Event_Input = styled.textarea`
 `;
 
 export const Img_Input_Label = styled.label`
+  cursor: pointer;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   width: max-content;
@@ -125,9 +127,7 @@ export const Img_Input_Label = styled.label`
   background: var(--Grayscale-100, #f6f5f7);
 `;
 
-export const Img_Input_Show = styled.img`
-  
-`
+export const Img_Input_Show = styled.img``;
 
 export const EmptyImg = styled.img``;
 
@@ -258,4 +258,9 @@ export const Payment_Label = styled.label`
     line-height: 24px;
     letter-spacing: -0.16px;
   }
+`;
+
+export const PreviewImage = styled.img`
+  object-fit: cover;
+  width: 100%;
 `;

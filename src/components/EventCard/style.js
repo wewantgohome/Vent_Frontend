@@ -32,8 +32,12 @@ export const ImageFrame = styled.div`
   display: flex;
   justify-content: end;
   background-color: #d9d9d9;
+  overflow: hidden;
 
   img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 
