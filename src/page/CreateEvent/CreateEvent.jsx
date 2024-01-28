@@ -4,11 +4,13 @@ import API from '../../api/index.js';
 import Header from '../../components/Header/';
 import Input from '../../components/Input/Input.jsx';
 import Button from '../../components/Button/Button.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const CreateEvent = () => {
+	const history = useNavigate();
 	const today = new Date();
 	const [title, setTitle] = useState();
-	const [explanation, setExplanation] = useState();
+	const [explanation, setExplanation] = useState('');
 	const [link, setLink] = useState();
 	const [place, setPlace] = useState();
 	const [startDate, setStartDate] = useState({
@@ -64,6 +66,8 @@ const CreateEvent = () => {
 		API.post('/event/create', formData, {
 			'Content-Type': 'Multipart/form-data',
 		});
+
+		history('/');
 	};
 
 	return (
@@ -80,7 +84,7 @@ const CreateEvent = () => {
 						<Input
 							type='text'
 							value={title}
-							onChange={(e) => setTitle(e.target.value)}
+							onChangeMethod={(e) => setTitle(e.target.value)}
 							holder='이벤트 이름을 입력해주세요'
 						/>
 					</S.Input_Box>
@@ -97,7 +101,7 @@ const CreateEvent = () => {
 						<Input
 							type='link'
 							value={link}
-							onChange={(e) => setLink(e.target.value)}
+							onChangeMethod={(e) => setLink(e.target.value)}
 							holder='링크 입력'
 						/>
 					</S.Input_Box>
@@ -106,7 +110,7 @@ const CreateEvent = () => {
 						<Input
 							type='text'
 							value={place}
-							onChange={(e) => setPlace(e.target.value)}
+							onChangeMethod={(e) => setPlace(e.target.value)}
 							holder='주소 입력'
 						/>
 					</S.Input_Box>
