@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  display: flex;
+  position: relative;
   cursor: pointer;
   width: 16vw;
   height: 15vw;
-  display: flex;
   flex-direction: column;
   justify-content: start;
   margin-bottom: 20px;
@@ -18,6 +19,7 @@ export const Wrapper = styled.div`
     line-height: 27px;
     letter-spacing: -0.18px;
   }
+
   p {
     color: ${(props) => props.Color};
   }
@@ -30,6 +32,7 @@ export const ImageFrame = styled.div`
   display: flex;
   justify-content: end;
   background-color: #d9d9d9;
+
   img {
   }
 `;
