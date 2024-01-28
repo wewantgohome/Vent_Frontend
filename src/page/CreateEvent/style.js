@@ -125,6 +125,10 @@ export const Img_Input_Label = styled.label`
   background: var(--Grayscale-100, #f6f5f7);
 `;
 
+export const Img_Input_Show = styled.img`
+  
+`
+
 export const EmptyImg = styled.img``;
 
 export const EmptyImg_Text = styled.div`
