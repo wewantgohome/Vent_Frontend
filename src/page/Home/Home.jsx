@@ -76,6 +76,7 @@ const Home = () => {
                 startDate={i.startDate}
                 endDate={i.endDate}
                 image={i.image}
+                tags={filter.tag}
               />
             ))}
         </EventCardList>

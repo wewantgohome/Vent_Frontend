@@ -68,5 +68,5 @@ export const EventCardList = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20%, auto));
-  gap: 20px 30px;
+  gap: 20px 40px;
 `;
