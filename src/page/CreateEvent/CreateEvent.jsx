@@ -118,7 +118,7 @@ const CreateEvent = () => {
                 <Input
                   type="number"
                   value={startDate.year}
-                  onChange={(e) =>
+                  onChangeMethod={(e) =>
                     setStartDate({ ...startDate, year: e.target.value })
                   }
                 />
@@ -128,7 +128,7 @@ const CreateEvent = () => {
                 <Input
                   type="number"
                   value={startDate.Month}
-                  onChange={(e) =>
+                  onChangeMethod={(e) =>
                     setStartDate({ ...startDate, Month: e.target.value })
                   }
                 />
@@ -138,7 +138,7 @@ const CreateEvent = () => {
                 <Input
                   type="number"
                   value={startDate.day}
-                  onChange={(e) =>
+                  onChangeMethod={(e) =>
                     setStartDate({ ...startDate, day: e.target.value })
                   }
                 />
@@ -153,7 +153,7 @@ const CreateEvent = () => {
                 <Input
                   type="number"
                   value={endDate.year}
-                  onChange={(e) =>
+                  onChangeMethod={(e) =>
                     setEndDate({ ...endDate, year: e.target.value })
                   }
                 />
@@ -163,7 +163,7 @@ const CreateEvent = () => {
                 <Input
                   type="number"
                   value={endDate.Month}
-                  onChange={(e) =>
+                  onChangeMethod={(e) =>
                     setEndDate({ ...endDate, Month: e.target.value })
                   }
                 />
@@ -173,7 +173,7 @@ const CreateEvent = () => {
                 <Input
                   type="number"
                   value={endDate.day}
-                  onChange={(e) =>
+                  onChangeMethod={(e) =>
                     setEndDate({ ...endDate, day: e.target.value })
                   }
                 />

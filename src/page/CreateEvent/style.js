@@ -10,6 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Main_Text = styled.div`
+  width: 939px;
   display: flex;
   flex-direction: column;
   justify-content: start;
