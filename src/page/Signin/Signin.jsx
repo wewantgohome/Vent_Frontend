@@ -6,8 +6,10 @@ import API from '../../api/index.js';
 import { setToken } from '../../Utils/libs/setCookies.js';
 import calculateSecondExp from '../../Utils/libs/calculateSecondExp.js';
 import { useCookies } from 'react-cookie';
+import { useNavigate } from 'react-router-dom';
 
 const Signin = () => {
+	const history = useNavigate();
 	const [businessId, setBusinessId] = useState('');
 	const [accessToken, setAccessToken] = useCookies(['accessToken']);
 	const [refreshToken, setRefreshToken] = useCookies(['refreshToken']);
@@ -27,6 +29,7 @@ const Signin = () => {
 				path: '/',
 				maxAge: 1382400,
 			});
+			history('/');
 		});
 	};
 	return (

@@ -13,18 +13,19 @@ import EventCard from "../../components/EventCard";
 import { FilterData } from "../../asset/data/filterData";
 import Header from "../../components/Header";
 import API from "../../api";
+import { HomeEventListData } from "../../asset/dummy/HomeEventListData";
 
 const Home = () => {
   const [filter, setFilter] = useState({
     name: "",
-    tag: ["진행중", "종료"],
+    tag: ["진행전", "진행중"],
   });
-  const [data, setData] = useState(undefined);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     API.get("/user/myevent").then((e) => {
       setData(e.data);
-      console.log(e.data);
+      console.log(e.data.userEvents);
     });
     return;
   }, []);
